@@ -79,7 +79,7 @@ class ViewController : GLKViewController, GKGameCenterControllerDelegateProtocol
 
         this.context = EAGLContext(kEAGLRenderingAPIOpenGLES3)
 
-        val view = this.view.reinterpret<GLKView>()
+        val view = this.view as GLKView
         view.context = this.context
         view.drawableDepthFormat = GLKViewDrawableDepthFormat24
         view.drawableMultisample = GLKViewDrawableMultisample4X
