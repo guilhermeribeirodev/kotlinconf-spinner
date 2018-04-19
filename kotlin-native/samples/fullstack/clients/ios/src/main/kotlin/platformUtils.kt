@@ -75,7 +75,7 @@ class StatsFetcherImpl : StatsFetcher {
                 delegateQueue = NSOperationQueue.mainQueue()
         )
 
-        session.dataTaskWithURL(NSURL(URLString = url)).resume()
+        session.dataTaskWithURL(NSURL(string = url)).resume()
 
         return true
     }
